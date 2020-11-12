@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <title>Food</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation_food">
+            <img class="logo1" src="image/LOGO.png" alt="">
+            <ul class="nav_list">
+                <li class="nav_list_item">
+                    <a class="nav_item" id="home" href="index.html">Home</a>
+    
+                </li>
+                <li class="nav_list_item">
+                    <a class="nav_item" id="food_active" href="food.html">Food</a>
+                </li>
+                <li class="nav_list_item">
+                    <a class="nav_item" id="map" href="map.html">Map</a>
+                </li>
+                <div class="slider_food"></div>
+
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <script src="js/script.js"></script>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>ScrollReveal.js Demo</title>
+
+    <script src="file:///C:/Users/Angel/Documents/%E7%B6%B2%E9%A0%81%E7%89%88%E9%9D%A2%E8%A8%AD%E8%A8%88/web_mid/image/canada.jpeg"></script>
+
+    <script src="file:///C:/Users/Angel/Documents/%E7%B6%B2%E9%A0%81%E7%89%88%E9%9D%A2%E8%A8%AD%E8%A8%88/web_mid/image/usa.jpg"></script>
+
+    <script src="file:///C:/Users/Angel/Documents/%E7%B6%B2%E9%A0%81%E7%89%88%E9%9D%A2%E8%A8%AD%E8%A8%88/web_mid/image/france.jpg"></script>
+
+    <style type="text/css">
+
+        .imgalbum {
+            margin-right: 20px;
+        }
+
+        .imgalbum_list {
+            width: 750px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+            .imgalbum_list ul {
+                float: left;
+                width: 250px;
+                margin: 0px;
+                padding: 0px;
+                list-style-type: none;
+            }
+
+            .imgalbum_list li {
+                margin: 20px 0px 20px 20px;
+                padding: 0px;
+            }
+
+            .imgalbum_list img {
+                width: 100%;
+                border-radius: 5px;
+                vertical-align: top;
+            }
+
+    </style>
+
+    <script type="text/javascript">
+
+        $(function () {
+
+            let c = '<div class="imgalbum_list">';
+            _.each(_.range(1, 3 + 1), function (kul) {
+                c += '<ul>';
+                _.each(_.range(1, 11 + 1), function (kli) {
+                    c += '<li><img alt=""></li>';
+                });
+                c += '</ul>';
+            });
+            c += '</div>';
+            $('#imgalbum').html(c);
+
+            let i = -1;
+            $('img').each(function () {
+                i++;
+
+                //o
+                let o = this;
+
+                $(o).attr('src', 'file:///C:/Users/Angel/Documents/%E7%B6%B2%E9%A0%81%E7%89%88%E9%9D%A2%E8%A8%AD%E8%A8%88/web_mid/image/usa.jpg' + (i + 1092) + '.jpg');
+
+                let origin = _.sample(['top', 'bottom', 'left', 'right']);
+                let duration = _.sample([500, 750, 1000, 1250, 1500]);
+
+                //reveal
+                ScrollReveal().reveal(o, {
+                    distance: '50px',
+                    origin: origin,
+                    duration: duration,
+                    //reset: true,
+                });
+
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body style="margin: 0px; padding: 0px; font-family:微軟正黑體;">
+
+    <h1 style="font-size: 50px; text-align:center;">
+        Exotic food</h1>
+
+    <p style="margin-bottom:20px; text-align:center;">foods</p>
+
+    <div id="imgalbum" class="imgalbum"></div>
+
+</body>
+</html>
+                
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
